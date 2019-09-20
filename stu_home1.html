@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+		<title>Teacher Home</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<!-- MATERIAL DESIGN ICONIC FONT -->
+		<link rel="stylesheet" href="fonts1/material-design-iconic-font/css/material-design-iconic-font.min.css">
+		
+		<!-- STYLE CSS -->
+		
+		<link rel="stylesheet" href="style.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: "Lato", sans-serif;
+}   
+
+.sidenav {
+  text-align: center;
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top:80px;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  top:140px;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+  
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+#main {
+  transition: margin-left .5s;
+top: 140px;
+  padding: 16px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+table, th, td {
+  border: 1px ;
+}
+.profile {
+  
+  top:140px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+</style>
+</head>
+<body>
+<!-- ##### Header Area Start ##### -->
+    <header class="header-area">
+
+      
+
+        <!-- Navbar Area -->
+        <div class="clever-main-menu">
+            <div class="classy-nav-container breakpoint-off">
+                <!-- Menu -->
+                <nav class="classy-navbar justify-content-between" id="cleverNav">
+
+                    <!-- Logo -->
+                    <a class="nav-brand" href="index.html"><h1>Datacode E-Learning</h1></a>
+                    <!-- Navbar Toggler -->
+                    <div class="classy-navbar-toggler">
+                        <span class="navbarToggler"><span></span><span></span><span></span></span>
+                    </div>
+
+                    <!-- Menu -->
+                    <div class="classy-menu">
+
+                        <!-- Close Button -->
+                        <div class="classycloseIcon">
+                            <div class="cross-wrap"><span class="top"></span><span class="bottom"></span></div>
+                        </div>
+
+                        <!-- Nav Start -->
+                        <div class="classynav">
+                            <ul>
+                                <li><a href="e-learninghome.html">Home</a></li>
+                               
+                                 
+                                <li><a href="courses.html">Courses</a></li>
+                               
+                                <li><a href="contact.html">Contact</a></li>
+                            </ul>
+
+                          
+
+                        </div>
+                        <!-- Nav End -->
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <!-- ##### Header Area End ##### -->
+
+
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+<img src="avatar.png" alt="Avatar" class="profile">
+  <a href="stu_Profile.html">Profile</a>
+  <a href="#">Course Updates</a>
+  <a href="#">Batch Schedule</a>
+  <a href="#">Fees Status</a>
+  <a href="#">Teacher's Notes</a>  
+  <a href="#">Certificates</a>
+
+</div>
+
+<div id="main">
+ 
+
+  <span style="font-size:30px;cursor:pointer;top:1400px;" onclick="openNav()">&#9776;</span>
+<hr>
+<table width="400">
+ <tr>
+    <th style="text-align:center;">NOTICE!!!</th>
+  
+  </tr>
+
+  <tr>
+    <td>welcome: __Student Name__ </td>
+   
+  </tr>
+<br>
+  <tr>
+    <td>role: [Student]</td>
+  
+  </tr>
+ 
+</table>
+<hr>
+</div>
+
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br><br>
+<br>
+<br>
+ <!-- ##### Footer Area Start ##### -->
+    <footer class="footer-area">
+        <!-- Top Footer Area -->
+        <div class="top-footer-area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <!-- Footer Logo -->
+                        <div class="footer-logo">
+                            <a href="index.html"><h1>Datacode E-Learning</h1></a>
+                        </div>
+
+                </div>
+            </div>
+        </div>
+
+        <!-- Bottom Footer Area -->
+        <div class="bottom-footer-area d-flex justify-content-between align-items-center">
+            <!-- Contact Info -->
+            <div class="contact-info">
+                <a href="#"><span>Phone:</span> +44 300 303 0266</a>
+                <a href="#"><span>Email:</span> info@clever.com</a>
+            </div>
+            <!-- Follow Us -->
+            <div class="follow-us">
+                <span>Follow us</span>
+                <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+            </div>
+        </div>
+    </footer>
+    <!-- ##### Footer Area End ##### -->
+
+    <!-- ##### All Javascript Script ##### -->
+<script>
+function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+  document.getElementById("main").style.marginLeft = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+  document.getElementById("main").style.marginLeft= "0";
+}
+</script>
+    <!-- jQuery-2.2.4 js -->
+    <script src="js/jquery/jquery-2.2.4.min.js"></script>
+    <!-- Popper js -->
+    <script src="js/bootstrap/popper.min.js"></script>
+    <!-- Bootstrap js -->
+    <script src="js/bootstrap/bootstrap.min.js"></script>
+    <!-- All Plugins js -->
+    <script src="js/plugins/plugins.js"></script>
+    <!-- Active js -->
+    <script src="js/active.js"></script>
+   
+</body>
+</html> 
+
